@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dobrodosli na sajt posvecen FPV Dron hobiju!">
+    <meta name="keywords" content="dronovi, kvadkopter, propeleri, fpv, brzina, adrenalin">
+    <meta name="author" content="Sergej Milic">
+    <title>Garaža Kvadkoptera</title>
+    <link rel="icon" type="image/x-icon" href="slike/Logo.png">
+    <link rel="stylesheet" href="css/mojcss.css">
+</head>
+<body>
+<nav class="navigacija">
+    <div class="logo-tema-dugme">
+        <div class="navigacija-ikonica">
+            <a href="pocetnastrana.html"><img src="slike/Logo.png" alt=""></a>
+        </div>
+        <div class="tamna-tema">
+            <span class="dugme-tamna-tema"></span>
+            <span>Promenite temu sajta</span>
+        </div>
+    </div>
+    <button class="navigacija-toggle">
+        <span class="hamburger"></span>
+    </button>
+    <ul class="navigacija-meni">
+
+        <li><a href="pocetnastrana.html">Naslovna</a></li>
+        <li><a href="onama.html">O Nama</a></li>
+        <li class="opadajuci">
+            <a href="#">Garaža</a>
+            <ul class="opadajuci-meni">
+                <li><a href="kvadkopteri.html">Kvadkopteri</a></li>
+                <li><a href="prirucnik.html">Priručnik</a></li>
+            </ul>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+
+
+    <div class="naslov-baner">
+        <div class="naslov-glavna">
+            <div class="naslov-kontent">
+                <h1>Kvadkopteri</h1>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="slajder">
+            <div class="lista-slika" id="lista-slika">
+                <img src="slike/KvadkopterLeti.jpg" width="770" alt="">
+                <img src="slike/KvadkopterGnezdo.jpg" width="770" alt="">
+                <img src="slike/KvadkopterSareni.jpg" width="770" alt="">
+            </div>
+            <div class="slajder-dugme">
+                <div class="pos-dugme" onclick="pomeriSliku(0)"></div>
+                <div class="pos-dugme" onclick="pomeriSliku(1)"></div>
+                <div class="pos-dugme" onclick="pomeriSliku(2)"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="tekst">
+        <h2>Uvod u kvadkoptere</h2>
+        <p>Kvadkopteri, poznati i kao dronovi, su bespilotne letelice sa četiri rotora koji im omogućavaju stabilan i precizan let. Ove letelice se koriste u raznim oblastima, od zabave i fotografije do komercijalnih i vojnih primena. Kvadkopteri su opremljeni kamerama visoke rezolucije koje omogućavaju snimanje iz vazduha, što je izuzetno korisno za kreiranje pejzažnih fotografija i video zapisa.</p><br><br>
+
+        <h2>Kontrola i upravljanje</h2>
+        <p>Za kontrolu kvadkoptera koristi se daljinski upravljač ili mobilna aplikacija, što omogućava korisnicima da lako upravljaju letelicom.Moderni modeli često imaju dodatne funkcije kao što su GPS navigacija, autonomno letenje i senzori za izbegavanje prepreka. Ove karakteristike čine kvadkoptere izuzetno fleksibilnim i korisnim alatima u različitim situacijama.</p><br><br>
+
+        <h2>Primene u industriji</h2>
+        <p>Kvadkopteri su takođe popularni u industriji dostave, gde se koriste za brzu i efikasnu isporuku paketa. U poljoprivredi, oni se koriste za nadzor useva i primenu pesticida. U vojsci, kvadkopteri služe za izviđanje i prikupljanje obaveštajnih podataka, zahvaljujući svojoj sposobnosti da lete na velikim visinama i pristupe teško dostupnim lokacijama.</p><br>
+
+    </div>
+
+    <footer>
+        <div class="futer-kontejner">
+            <div class="logo">
+                <img src="slike/Logo.png" alt="Logo">
+            </div>
+            <div class="kolona">
+                <h4>Partneri</h4>
+                <ul>
+                    <li><a>FPVSerbia</a></li>
+                    <li><a>Mreza Corp</a></li>
+                    <li><a>TrkeDronova</a></li>
+                </ul>
+            </div>
+            <div class="kolona">
+                <h4>Radno Vreme Garaze</h4>
+                <ul>
+                    <li><a>PON - SUB: 08:00 - 21:00</a></li>
+                    <li><a>NED: NE RADIMO</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/slajder.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/tema.js"></script>
+</body>
+</html>

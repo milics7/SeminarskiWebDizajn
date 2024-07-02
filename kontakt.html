@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dobrodosli na sajt posvecen FPV Dron hobiju!">
+    <meta name="keywords" content="dronovi, kvadkopter, propeleri, fpv, brzina, adrenalin">
+    <meta name="author" content="Sergej Milic">
+    <title>Garaža Kvadkoptera</title>
+    <link rel="icon" type="image/x-icon" href="slike/Logo.png">
+    <link rel="stylesheet" href="css/mojcss.css">
+</head>
+<body>
+    <nav class="navigacija">
+        <div class="logo-tema-dugme">
+            <div class="navigacija-ikonica">
+                <a href="pocetnastrana.html"><img src="slike/Logo.png" alt=""></a>
+            </div>
+            <div class="tamna-tema">
+                <span class="dugme-tamna-tema"></span>
+                <span>Promenite temu sajta</span>
+              </div>
+            </div>
+        </div>
+        <button class="navigacija-toggle">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="navigacija-meni">
+            
+            <li><a href="pocetnastrana.html">Naslovna</a></li>
+            <li><a href="onama.html">O Nama</a></li>
+            <li class="opadajuci">
+                <a href="#">Garaža</a>
+                <ul class="opadajuci-meni">
+                    <li><a href="kvadkopteri.html">Kvadkopteri</a></li>
+                    <li><a href="prirucnik.html">Priručnik</a></li>
+                </ul>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="forma">
+        <form onsubmit="event.preventDefault(); validirajFormu()">
+            <h1 class="kontaktirajtenas">Kontaktirajte nas</h1>
+
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" placeholder="Vaše ime">
+            <small class="greska"></small>
+
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Vaš email">
+            <small class="greska"></small>
+
+            
+            <label for="poruka">Poruka:</label>
+            <textarea type="text" id="poruka" placeholder="Vaša poruka" rows="6"></textarea>
+            <small class="greska"></small>
+
+            <div class="centar">
+                <input type="submit" value="Pošalji poruku">
+                <p id="uspesno"></p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="futer-kontejner">
+            <div class="logo">
+                <img src="slike/Logo.png" alt="Logo">
+            </div>
+            <div class="kolona">
+                <h4>Partneri</h4>
+                <ul>
+                    <li><a>FPVSerbia</a></li>
+                    <li><a>Mreza Corp</a></li>
+                    <li><a>TrkeDronova</a></li>
+                </ul>
+            </div>
+            <div class="kolona">
+                <h4>Radno Vreme Garaze</h4>
+                <ul>
+                    <li><a>PON - SUB: 08:00 - 21:00</a></li>
+                    <li><a>NED: NE RADIMO</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/validacija.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/tema.js"></script>
+</body>
+</html>
